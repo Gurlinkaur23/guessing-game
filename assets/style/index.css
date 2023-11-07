@@ -39,21 +39,26 @@ body {
   border: 1px solid #d82685;
 }
 
+.welcome {
+  font-size: 35px;
+}
+
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 100px;
 }
 
 .instruction {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   margin: 10px auto;
 }
 
-.guess {
+.attempts {
   margin: 10px auto;
   font-size: 24px;
   font-weight: 500;
@@ -69,7 +74,22 @@ section {
   font-size: 70px;
   text-align: center;
   font-weight: 600;
-  box-shadow: 4px 4px 5px rgb(217, 38, 133)
+  box-shadow: 4px 4px 5px rgb(217, 38, 133);
+}
+
+.btn-guess {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  color: #ff42a0;
+  font-size: 18px;
+  font-weight: 400;
+  transition: ease-in-out;
+  margin: 10px auto;
+}
+
+.btn-guess:hover {
+  border: 1px solid #d82685;
 }
 
 .text {

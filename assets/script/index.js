@@ -11,7 +11,7 @@ function select(selector, parent = document) {
 
 // Selections
 const btnPlay = select(".btn-play");
-const guess = select(".guess");
+const attempts = select(".attempts");
 const inputNumber = select(".input-number");
 const message = select(".message");
 
@@ -19,5 +19,14 @@ const message = select(".message");
 let randomNumber = Math.floor(Math.random() * 50 + 1);
 
 // Validaton
+function isNumber() {
+  if (!isNaN(guess.value)) {
+    message.innerText = guess.value > 0 && guess.value <=50 ? `${guess.value}` : 'Please enter a number from 1 to 50'
+  } else {
+    message.innerText = 'Please enter a valid number';
+  }
+}
+
+isNumber();
 
 // Events
