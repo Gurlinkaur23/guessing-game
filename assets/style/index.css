@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito sans", "Open sans", Arial, sans-serif;
+  background-color: #ff42a0;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.btn-play {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  color: #ff42a0;
+  font-size: 18px;
+  font-weight: 600;
+  transition: ease-in-out;
+}
+
+.btn-play:hover {
+  border: 1px solid #d82685;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.instruction {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.guess {
+  margin: 10px auto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.input-number {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-color: #fff;
+  color: #ff42a1;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 4px 4px 5px rgb(217, 38, 133)
+}
+
+.text {
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #d92685;
+  margin: 20px auto;
+}
+
+.message {
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
