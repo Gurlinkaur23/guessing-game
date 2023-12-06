@@ -20,18 +20,25 @@ body {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  position: relative;
 }
 
 .btn-play {
-  position: fixed;
+  position: absolute;
   top: 40px;
-  right: 40px;
+  right: 0;
   height: 40px;
   width: 120px;
   border-radius: 10px;
   color: #ff42a0;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
   transition: ease-in-out;
 }
 
@@ -41,15 +48,6 @@ body {
 
 .welcome {
   font-size: 35px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* height: 100vh; */
-  margin-top: 100px;
 }
 
 .instruction {
@@ -86,13 +84,14 @@ section {
   font-weight: 400;
   transition: ease-in-out;
   margin: 10px auto;
+  cursor: pointer;
 }
 
 .btn-guess:hover {
   border: 1px solid #d82685;
 }
 
-.text {
+.msg-box {
   height: 50px;
   width: 400px;
   border-radius: 10px;
